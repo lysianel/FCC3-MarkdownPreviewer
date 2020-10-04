@@ -1,38 +1,64 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+.App{
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  height:100vh;
+  /*background-color: #a2d5db;*/
+}
+
+.block{
+  overflow: auto;
+}
+
+#editorBlock{
+  /*background-color: #70adb5;*/
+}
+
+#previewerBlock{
+  
+}
+
+.headerBlock{
   text-align: center;
+  background-color: #1e7c87;
+  padding-top:5px;
+  padding-bottom:5px;
+  color:white;
+}
+.headerBlock h1,p{
+   margin:0;
+   padding:5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#preview, #editor{
+  font-size:0.8rem;
+  height:80%;
+  border:none;
+  padding: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+textarea{
+  box-sizing:border-box;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (max-width : 769px) {
+  .App{
+  display: grid;
+  grid-template-columns:1fr;
+  /*grid-template-rows: 1fr 1fr;*/
 }
 
-.App-link {
-  color: #61dafb;
+.block{
+  
+  overflow: visible;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea{
+  min-height:300px;
+}
+
 }
