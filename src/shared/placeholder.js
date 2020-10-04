@@ -16,5 +16,5 @@ You can also style your text as you need
 
 This is only an insight of what you can do. Check more on [github](https://guides.github.com/features/mastering-markdown/).
 
-Built with React ![React Logo](https://github.com/lysianel/FCC3-MarkdownPreviewer/master/src/shared/reactLogo.png). More info on [reactjs.org](https://reactjs.org/)`  ;
+Built with React ![React Logo](https://raw.githubusercontent.com/lysianel/FCC3-MarkdownPreviewer/master/public/reactLogo.png). More info on [reactjs.org](https://reactjs.org/)`  ;
 

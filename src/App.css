@@ -6,19 +6,10 @@
   display: grid;
   grid-template-columns:1fr 1fr;
   height:100vh;
-  /*background-color: #a2d5db;*/
 }
 
 .block{
   overflow: auto;
-}
-
-#editorBlock{
-  /*background-color: #70adb5;*/
-}
-
-#previewerBlock{
-  
 }
 
 .headerBlock{
@@ -28,9 +19,10 @@
   padding-bottom:5px;
   color:white;
 }
+
 .headerBlock h1,p{
-   margin:0;
-   padding:5px;
+  margin:0;
+  padding:5px;
 }
 
 #preview, #editor{
@@ -45,20 +37,21 @@ textarea{
   width: 100%;
 }
 
+img{
+  width:15px;
+}
+
 @media (max-width : 769px) {
   .App{
   display: grid;
   grid-template-columns:1fr;
-  /*grid-template-rows: 1fr 1fr;*/
-}
+  }
 
-.block{
-  
+  .block{
   overflow: visible;
-}
+  }
 
-textarea{
-  min-height:300px;
-}
-
+  textarea{
+    min-height:300px;
+  }
 }
